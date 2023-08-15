@@ -40,6 +40,8 @@
 
 .home-page .card img:hover {
   transform: scale(0.9);
+  transition: .3s ease-in;
+  transition: .3s ease-out;
 }
 
 .home-page .card-img-top {

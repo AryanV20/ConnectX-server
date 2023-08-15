@@ -27,14 +27,14 @@ const Profile = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.put("https://ecommerce-e04x.onrender.com/api/v1/auth/profile", {
+      const { data } = await axios.put("https://ecommerce-irbv.onrender.com/api/v1/auth/profile", {
         name,
         email,
         password,
         phone,
         address,
       });
-      if (data?.errro) {
+      if (data?.error) {
         toast.error(data?.error);
       } else {
         setAuth({ ...auth, user: data?.updatedUser });
